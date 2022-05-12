@@ -9,7 +9,7 @@ class ChannelPageAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return const CupertinoSliverNavigationBar(
       largeTitle: Text(
-        'Messages',
+        'The Exchange',
         style: TextStyle(letterSpacing: -1.3),
       ),
     );
