@@ -8,18 +8,18 @@ import 'package:stream_chat_flutter_core/stream_chat_flutter_core.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final client = StreamChatClient('b67pax5b2wdq', logLevel: Level.INFO); //
+  final client = StreamChatClient('xw7atgefnpfh', logLevel: Level.INFO); //
 
   // For demonstration purposes. Fixed user and token.
   await client.connectUser(
     User(
-      id: 'cool-shadow-7',
+      id: 'skelley',
       extraData: const {
         'image':
             'https://getstream.io/random_png/?id=cool-shadow-7&amp;name=Cool+shadow',
       },
     ),
-    'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiY29vbC1zaGFkb3ctNyJ9.gkOlCRb1qgy4joHPaxFwPOdXcGvSPvp6QY0S4mpRkVo',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoic2tlbGxleSJ9.vYopXuRlx2lFiD97oOrkjhidY8DVIFMMkgiZXRihpF8',
   );
 
   runApp(IMessage(client: client));
