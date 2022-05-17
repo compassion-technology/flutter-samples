@@ -70,14 +70,15 @@ class _ChannelListPageState extends State<ChannelListPage> {
     }
     return Scaffold(
       backgroundColor: StreamChatTheme.of(context).colorTheme.appBg,
-      appBar: StreamChannelListHeader(
-        onNewChatButtonTap: () {
-          Navigator.pushNamed(context, Routes.NEW_CHAT);
-        },
-        preNavigationCallback: () {
-          FocusScope.of(context).requestFocus(FocusNode());
-        },
-      ),
+      appBar: AppBar(title: Text('The Exchange')),
+      // appBar: StreamChannelListHeader(
+      //   onNewChatButtonTap: () {
+      //     Navigator.pushNamed(context, Routes.NEW_CHAT);
+      //   },
+      //   preNavigationCallback: () {
+      //     FocusScope.of(context).requestFocus(FocusNode());
+      //   },
+      // ),
       drawer: LeftDrawer(
         user: user,
       ),
