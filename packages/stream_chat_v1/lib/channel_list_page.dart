@@ -5,6 +5,7 @@ import 'package:example/routes/routes.dart';
 import 'package:example/user_mentions_page.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_app_badger/flutter_app_badger.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
@@ -71,10 +72,13 @@ class _ChannelListPageState extends State<ChannelListPage> {
     return Scaffold(
       backgroundColor: StreamChatTheme.of(context).colorTheme.appBg,
       appBar: AppBar(
-                title: Text('The Exchange'), 
-                backgroundColor: StreamChatTheme.of(context).colorTheme.barsBg,
-                foregroundColor: StreamChatTheme.of(context).colorTheme.textHighEmphasis,       
-                ),
+        actions: <Widget> [Padding(padding: EdgeInsets.fromLTRB(0, 0, 16, 0), child: Image(image: AssetImage('assets/skippy_white.png'), height: 24, width: 24))],
+        title: Text('The Exchange'),
+        backgroundColor: StreamChatTheme.of(context).colorTheme.barsBg,
+        foregroundColor:
+            StreamChatTheme.of(context).colorTheme.textHighEmphasis,
+        
+      ),
 
       // appBar: StreamChannelListHeader(
       //   onNewChatButtonTap: () {

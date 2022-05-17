@@ -9,7 +9,7 @@ final defaultUsers = <String, User>{
     extraData: {
       'name': 'Test User',
       'image':
-          'https://media-exp1.licdn.com/dms/image/C5603AQFsJtLMj7LegQ/profile-displayphoto-shrink_200_200/0/1548810018854?e=1658361600&v=beta&t=ivSVOd6Kmzl4MHRxML5grLPwfOWY1yVrT0P8HDzd7MI',
+          'https://media-exp1.licdn.com/dms/image/C4D0BAQGeSMYq1F7W9w/company-logo_100_100/0/1631039475975?e=1660780800&v=beta&t=LPCbT9NCMLnZ4aaKnzWybTGs0pLsBVPxxQ7mcoGbWx4',
     },
   ),
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoic2tlbGxleSJ9.rCNQoUcATdYKLZ2R0GtL7QHKh1_lI_a7FwqAAAgy1_g':
