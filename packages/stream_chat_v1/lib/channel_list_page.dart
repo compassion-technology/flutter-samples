@@ -70,7 +70,12 @@ class _ChannelListPageState extends State<ChannelListPage> {
     }
     return Scaffold(
       backgroundColor: StreamChatTheme.of(context).colorTheme.appBg,
-      appBar: AppBar(title: Text('The Exchange')),
+      appBar: AppBar(
+                title: Text('The Exchange'), 
+                backgroundColor: StreamChatTheme.of(context).colorTheme.barsBg,
+                foregroundColor: StreamChatTheme.of(context).colorTheme.textHighEmphasis,       
+                ),
+
       // appBar: StreamChannelListHeader(
       //   onNewChatButtonTap: () {
       //     Navigator.pushNamed(context, Routes.NEW_CHAT);
