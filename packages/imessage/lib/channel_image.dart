@@ -19,7 +19,7 @@ class ChannelImage extends StatelessWidget {
     final avatarUrl = channel.extraData.containsKey('image') &&
             (channel.extraData['image'] as String).isNotEmpty
         ? channel.extraData['image'] as String?
-        : 'https://4.bp.blogspot.com/-Jx21kNqFSTU/UXemtqPhZCI/AAAAAAAAh74/BMGSzpU6F48/s1600/funny-cat-pictures-047-001.jpg';
+        : 'https://media-exp1.licdn.com/dms/image/C4D0BAQGeSMYq1F7W9w/company-logo_100_100/0/1631039475975?e=1660780800&v=beta&t=LPCbT9NCMLnZ4aaKnzWybTGs0pLsBVPxxQ7mcoGbWx4';
 
     return CupertinoCircleAvatar(
       size: size,

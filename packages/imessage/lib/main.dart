@@ -13,13 +13,13 @@ Future<void> main() async {
   // For demonstration purposes. Fixed user and token.
   await client.connectUser(
     User(
-      id: 'skelley',
+      id: 'test_user',
       extraData: const {
         'image':
-            'https://getstream.io/random_png/?id=cool-shadow-7&amp;name=Cool+shadow',
+            'https://media-exp1.licdn.com/dms/image/C4D0BAQGeSMYq1F7W9w/company-logo_100_100/0/1631039475975?e=1660780800&v=beta&t=LPCbT9NCMLnZ4aaKnzWybTGs0pLsBVPxxQ7mcoGbWx4',
       },
     ),
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoic2tlbGxleSJ9.rCNQoUcATdYKLZ2R0GtL7QHKh1_lI_a7FwqAAAgy1_g',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidGVzdF91c2VyIn0.2c6IoYEDK7iFJOi5cF5eWLIjws5WH9YxYOEeG2EbXIo',
   );
 
   runApp(IMessage(client: client));
