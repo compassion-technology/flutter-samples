@@ -72,7 +72,7 @@ class _ChannelListPageState extends State<ChannelListPage> {
     return Scaffold(
       backgroundColor: StreamChatTheme.of(context).colorTheme.appBg,
       appBar: AppBar(
-        actions: <Widget> [Padding(padding: EdgeInsets.fromLTRB(0, 0, 16, 0), child: Image(image: AssetImage('assets/skippy_white.png'), height: 24, width: 24))],
+        // actions: <Widget> [Padding(padding: EdgeInsets.fromLTRB(0, 0, 16, 0), child: Image(image: AssetImage('assets/skippy_blue_circle.png'), height: 44, width: 44))],
         title: Text('The Exchange'),
         backgroundColor: StreamChatTheme.of(context).colorTheme.barsBg,
         foregroundColor:

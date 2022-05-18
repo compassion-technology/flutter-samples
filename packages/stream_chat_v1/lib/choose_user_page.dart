@@ -33,7 +33,7 @@ class ChooseUserPage extends StatelessWidget {
               ),
               child: Center(
                 child: Image.asset(
-                  'assets/skippy_white.png',
+                  'assets/skippy_blue_circle.png',
                   height: 40,
                   // color: StreamChatTheme.of(context).colorTheme.accentPrimary,
                 ),
