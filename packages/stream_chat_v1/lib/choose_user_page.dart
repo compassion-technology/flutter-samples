@@ -32,24 +32,25 @@ class ChooseUserPage extends StatelessWidget {
                 bottom: 20,
               ),
               child: Center(
-                child: SvgPicture.asset(
-                  'assets/logo.svg',
+                child: Image.asset(
+                  'assets/skippy_white.png',
                   height: 40,
-                  color: StreamChatTheme.of(context).colorTheme.accentPrimary,
+                  // color: StreamChatTheme.of(context).colorTheme.accentPrimary,
                 ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 13.0),
               child: Text(
-                AppLocalizations.of(context).welcomeToStreamChat,
+                // AppLocalizations.of(context).welcomeToStreamChat,
+                'Welcome to the Exchange',
                 style: StreamChatTheme.of(context).textTheme.title,
               ),
             ),
-            Text(
-              '${AppLocalizations.of(context).selectUserToTryFlutterSDK}:',
-              style: StreamChatTheme.of(context).textTheme.body,
-            ),
+            // Text(
+            //   '${AppLocalizations.of(context).selectUserToTryFlutterSDK}:',
+            //   style: StreamChatTheme.of(context).textTheme.body,
+            // ),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.only(top: 32),

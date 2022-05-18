@@ -8,10 +8,11 @@ import 'package:stream_chat_flutter_core/stream_chat_flutter_core.dart'
 class ChannelListView extends StatelessWidget {
   const ChannelListView({Key? key, required this.channels}) : super(key: key);
   final List<Channel> channels;
-
+  //
   @override
   Widget build(BuildContext context) {
     channels.removeWhere((channel) => channel.lastMessageAt == null);
+
     return SliverList(
       delegate: SliverChildBuilderDelegate(
         (

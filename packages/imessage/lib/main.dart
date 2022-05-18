@@ -8,7 +8,7 @@ import 'package:stream_chat_flutter_core/stream_chat_flutter_core.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final client = StreamChatClient('xw7atgefnpfh', logLevel: Level.INFO); //
+  final client = StreamChatClient('tqdpjrr7us6k', logLevel: Level.INFO); //
 
   // For demonstration purposes. Fixed user and token.
   await client.connectUser(
@@ -19,7 +19,7 @@ Future<void> main() async {
             'https://getstream.io/random_png/?id=cool-shadow-7&amp;name=Cool+shadow',
       },
     ),
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoic2tlbGxleSJ9.vYopXuRlx2lFiD97oOrkjhidY8DVIFMMkgiZXRihpF8',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoic2tlbGxleSJ9.rCNQoUcATdYKLZ2R0GtL7QHKh1_lI_a7FwqAAAgy1_g',
   );
 
   runApp(IMessage(client: client));
@@ -34,7 +34,7 @@ class IMessage extends StatelessWidget {
   Widget build(BuildContext context) {
     initializeDateFormatting('en_US', null);
     return CupertinoApp(
-      title: 'Flutter Demo',
+      title: 'The Exchange',
       debugShowCheckedModeBanner: false,
       theme: const CupertinoThemeData(brightness: Brightness.light),
       home: StreamChatCore(client: client, child: ChatLoader()),
