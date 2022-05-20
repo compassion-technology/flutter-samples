@@ -71,23 +71,29 @@ class _ChannelListPageState extends State<ChannelListPage> {
     }
     return Scaffold(
       backgroundColor: StreamChatTheme.of(context).colorTheme.appBg,
-      appBar: AppBar(
-        // actions: <Widget> [Padding(padding: EdgeInsets.fromLTRB(0, 0, 16, 0), child: Image(image: AssetImage('assets/skippy_blue_circle.png'), height: 44, width: 44))],
-        title: Text('The Exchange'),
-        backgroundColor: StreamChatTheme.of(context).colorTheme.barsBg,
-        foregroundColor:
-            StreamChatTheme.of(context).colorTheme.textHighEmphasis,
-        
-      ),
+      // appBar: AppBar(
+      //   // actions: <Widget> [Padding(padding: EdgeInsets.fromLTRB(0, 0, 16, 0), child: Image(image: AssetImage('assets/skippy_blue_circle.png'), height: 44, width: 44))],
+      //   title: Text('The Exchange'),
+      //   backgroundColor: StreamChatTheme.of(context).colorTheme.barsBg,
+      //   foregroundColor:
+      //       StreamChatTheme.of(context).colorTheme.textHighEmphasis,
 
-      // appBar: StreamChannelListHeader(
-      //   onNewChatButtonTap: () {
-      //     Navigator.pushNamed(context, Routes.NEW_CHAT);
-      //   },
-      //   preNavigationCallback: () {
-      //     FocusScope.of(context).requestFocus(FocusNode());
-      //   },
       // ),
+
+      appBar: StreamChannelListHeader(
+        titleBuilder: (context, status, client) {
+          switch (status) {
+            default:
+              return const Text('The Exchange');
+          }
+        },
+        onNewChatButtonTap: () {
+          Navigator.pushNamed(context, Routes.NEW_CHAT);
+        },
+        preNavigationCallback: () {
+          FocusScope.of(context).requestFocus(FocusNode());
+        },
+      ),
       drawer: LeftDrawer(
         user: user,
       ),
